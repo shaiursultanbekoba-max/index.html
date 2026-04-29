@@ -20,7 +20,7 @@
   button {
     width: 120px;
     height: 120px;
-    border-radius: 50%; /* делает кнопку круглой */
+    border-radius: 50%;
     border: none;
     background: red;
     color: white;
@@ -31,4 +31,22 @@
   #data {
     margin-top: 20px;
     display: none;
-    font-size:
+    font-size: 18px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <button onclick="showData()">Жми</button>
+  <div id="data">Вот данные 🔥</div>
+</div>
+
+<script>
+function showData() {
+  document.getElementById("data").style.display = "block";
+}
+</script>
+
+</body>
+</html>
